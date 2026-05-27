@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>当阳市坝陵化工园职业技能竞赛</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #c41e3a 0%, #8b0000 100%);
+            color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(139, 0, 0, 0.2);
+        }
+
+        .header h1 {
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .header .subtitle {
+            font-size: 14px;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        .theme-badge {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 24px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 28px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .card h2 {
+            font-size: 18px;
+            color: #8b0000;
+            border-left: 4px solid #c41e3a;
+            padding-left: 12px;
+            margin-bottom: 16px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 10px 16px;
+        }
+
+        .info-grid .label {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .info-grid .value {
+            color: #333;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .highlight-box {
+            background: #fef5f5;
+            border: 1px solid #f5d0d0;
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 12px;
+        }
+
+        .highlight-box p {
+            font-size: 14px;
+            color: #8b0000;
+        }
+
+        .project-item {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .project-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .project-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 6px;
+        }
+
+        .project-desc {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            background: #f0f0f0;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #666;
+            margin-right: 6px;
+        }
+
+        .award-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .award-table th,
+        .award-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 14px;
+        }
+
+        .award-table th {
+            background: #fafafa;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .award-table td {
+            color: #333;
+        }
+
+        .contact-list {
+            list-style: none;
+        }
+
+        .contact-list li {
+            padding: 8px 0;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #f5f5f5;
+        }
+
+        .contact-list li:last-child {
+            border-bottom: none;
+        }
+
+        .footer {
+            text-align: center;
+            color: #999;
+            font-size: 12px;
+            margin-top: 30px;
+        }
+
+        .deadline-warning {
+            background: #fff7e6;
+            border: 1px solid #ffd591;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin-top: 12px;
+        }
+
+        .deadline-warning strong {
+            color: #d46b08;
+        }
+
+        .deadline-warning p {
+            font-size: 14px;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        @media (max-width: 600px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            .header h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>2026年当阳市坝陵化工园<br>职业技能竞赛</h1>
+            <div class="subtitle">当阳市总工会 / 当阳高新技术产业开发区管理委员会</div>
+            <div class="theme-badge">匠心筑梦 · 技创未来</div>
+        </div>
+
+        <div class="card">
+            <h2>基本信息</h2>
+            <div class="info-grid">
+                <span class="label">竞赛时间</span>
+                <span class="value">2026年6月23日（周二）8:30-17:30</span>
+                <span class="label">竞赛地点</span>
+                <span class="value">当阳琰珑教育培训学校（当阳市长坂路543号3楼）</span>
+                <span class="label">主办单位</span>
+                <span class="value">当阳市总工会、当阳高新技术产业开发区管理委员会</span>
+                <span class="label">承办单位</span>
+                <span class="value">当阳市琰珑职业技术培训学校</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>竞赛项目</h2>
+            <div class="project-item">
+                <div class="project-title">电工</div>
+                <div class="project-desc">实操考核：电气控制线路的安装、调试与故障排查，包括电路图配盘、接线、PLC及变频器简单应用等</div>
+                <div style="margin-top:8px"><span class="tag">时长 90 分钟</span><span class="tag">实操考核</span></div>
+            </div>
+            <div class="project-item">
+                <div class="project-title">仪器仪表维修工</div>
+                <div class="project-desc">实操考核：控制系统组态与调试，包括控制方案设计、控制逻辑编写、流程图绘制、组态下载及发布等</div>
+                <div style="margin-top:8px"><span class="tag">时长 60 分钟</span><span class="tag">单人操作</span></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>联系方式</h2>
+            <ul class="contact-list">
+                <li>
+                    <span>当阳市总工会 · 王秋悦</span>
+                    <span style="color:#8b0000; font-weight:500;">15171922906</span>
+                </li>
+                <li>
+                    <span>当阳琰珑职校 · 祁老师</span>
+                    <span style="color:#8b0000; font-weight:500;">13040990198</span>
+                </li>
+                <li>
+                    <span>当阳琰珑职校 · 朱老师</span>
+                    <span style="color:#8b0000; font-weight:500;">13349788260</span>
+                </li>
+                <li>
+                    <span>电子邮箱</span>
+                    <span style="color:#333;">2502813903@qq.com</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>当阳市总工会 / 当阳高新技术产业开发区管理委员会</p>
+            <p>2026年5月25日</p>
+        </div>
+    </div>
+</body>
+</html>
